@@ -12,7 +12,10 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - _NORMALMAP
+  - _PARALLAXMAP
   - _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+  - _SPECGLOSSMAP
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -25,7 +28,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 952d4a2d41e4296479d949aa290d9cbb, type: 3}
+        m_Texture: {fileID: 2800000, guid: 251af02da3668794f977b3005fbb03ef, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Cube:
@@ -61,11 +64,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 2800000, guid: 7308f918b389f1f499ba4724c7510f12, type: 3}
+        m_Texture: {fileID: 2800000, guid: cb29195c9d61bbb44814c9db6f156aba, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 9565490e352a9c645bd0588db161bb05, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TerrainHolesTexture:
@@ -78,13 +81,13 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _GlossMapScale: 0
+    - _GlossMapScale: 0.648
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _Parallax: 0.0217
+    - _Parallax: 0.0148
     - _Shininess: 0.078125
     - _SmoothnessTextureChannel: 1
     - _SpecularHighlights: 1

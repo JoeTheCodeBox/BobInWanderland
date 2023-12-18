@@ -10,5 +10,7 @@ public class MaterialChangeScript : MonoBehaviour
             ChildRenderers[i].material = newMaterial;
         }
         this.gameObject.GetComponentInChildren<ParticleSystem>().Play();
+        AudioSource pop = this.gameObject.GetComponent<AudioSource>();
+		pop.Play();
     }
 }

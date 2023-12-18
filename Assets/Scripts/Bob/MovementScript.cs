@@ -50,6 +50,7 @@ public class MovementScript : MonoBehaviour
 			bobSpeed = Mathf.Clamp(bobSpeed - 10.0f, 10.0f, 50.0f);
 		}
 		if(resetScale) ResetScale();
+
 		transform.position = new Vector3(
 			Mathf.Clamp(position.x, -40, 40),
 			Mathf.Clamp(position.y, 0, float.MaxValue),
@@ -64,9 +65,6 @@ public class MovementScript : MonoBehaviour
 		scale.y = Mathf.Clamp(scale.y, .05f, 2.5f);
 		scale.z = Mathf.Clamp(scale.z, .05f, 2.5f);
 		transform.localScale = scale;
-		AudioSource pop = this.gameObject.GetComponent<AudioSource>();
-
-		pop.Play();
 		if (transform.localScale.x > 2.0f) {
 			Animator anim = this.gameObject.GetComponent<Animator>();
 			canMove = false;
@@ -83,10 +81,6 @@ public class MovementScript : MonoBehaviour
 		scale.y = Mathf.Clamp(scale.y, .05f, 5.0f);
 		scale.z = Mathf.Clamp(scale.z, .05f, 5.0f);
 		transform.localScale = scale;
-		AudioSource pop = this.gameObject.GetComponent<AudioSource>();
-
-		pop.Play();
-
 		if (transform.localScale.x < .1f) {
 			Animator anim = this.gameObject.GetComponent<Animator>();
 			canMove = false;
