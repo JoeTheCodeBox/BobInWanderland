@@ -7,7 +7,7 @@ W - E to move up and down
 U - I to speed up and slow down
 N - M to scale up and scale down
 Keyboard arrows to move camera along the global axis
-+ and - to move the camera up and down
+\+ and - to move the camera up and down
 Move bob to the cubes to change his color!
 Some cubes change his size.
 Don't scale him too much or too little though, something might happen!
